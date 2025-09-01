@@ -31,8 +31,8 @@ The goal of this project is to create a model that can generate concise, coheren
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    cd your-repo-name
+    git clone https://github.com/Shivam-KumarSingh/News_Summarization_llm.git
+    cd News_Summarization_llm
     ```
 
 2.  **Install the required packages:**
@@ -48,12 +48,12 @@ The entire pipeline is contained within the  Jupyter Notebook.
 1.  **Run the script:** Execute the cells in the notebook .
     
 
-2.  **Training Process:** The script will automatically:
+2.  **Training Process:** The Notebook cell will automatically:
     -   Load the `ILSUM/ILSUM-1.0` dataset.
     -   Filter and preprocess the articles and summaries.
     -   Tokenize the text using the BART tokenizer.
     -   Initialize the `Seq2SeqTrainer`.
-    -   Start the fine-tuning process for 3 epochs.
+    -   Start the fine-tuning process for 3 epochs(adjust parameters and epochs for training to get better output ).
     -   Save the trained model and tokenizer to the output directory (`./bart-news-summarizer`).
 
 3.  **Inference:** The last part of the script demonstrates how to load the fine-tuned model and generate a summary for a sample article.
